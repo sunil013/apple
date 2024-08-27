@@ -7,6 +7,7 @@ import { cameraSampleImages } from '../constants'
 const CameraIntro = () => {
   const isMobile = IsMobile();
   const isDesktop =  IsDesktop();
+
     useGSAP(() => {
       animateWithGsap("#camera_title", {
         opacity: 1,
@@ -29,7 +30,7 @@ const CameraIntro = () => {
     return (
       <section className="common-padding">
         <div className='screen-max-width-small'>
-          <h4 id="camera_title" className="text-white text-5xl font-bold opacity-0 mt-2 mb-10">
+          <h4 id="camera_title" className="text-white text-3xl md:text-5xl font-bold opacity-0 mt-2 md:mb-10 mb-8">
             A camera that captures your wildest imagination.
           </h4>
           <p id="camera_title" className='hiw-text opacity-0'>
@@ -40,10 +41,10 @@ const CameraIntro = () => {
               src={isMobile ? cameraSampleImages.small : isDesktop ? cameraSampleImages.large : cameraSampleImages.medium} 
               className='camera-intro-image w-full' 
               alt='camera_zoom' 
-              style={{transform: "matrix(1.6, 0, 0, 1.6, 0, 200)"}}
+              style={{transform: isDesktop ? "matrix(1.6, 0, 0, 1.6, 0, 200)":"matrix(1, 0, 0, 1, 0, 0)"}}
             />
             </div>
-            <p className='text-gray'>A green iguana, captured by the 48MP Main camera</p>
+            <p className='text-gray text-xs md:text-sm'>A green iguana, captured by the 48MP Main camera</p>
         </div>
       </section>
     );
