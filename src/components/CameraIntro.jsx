@@ -30,10 +30,10 @@ const CameraIntro = () => {
     return (
       <section className="common-padding">
         <div className='screen-max-width-small'>
-          <h4 id="camera_title" className="text-white text-3xl md:text-5xl font-bold opacity-0 mt-2 md:mb-10 mb-8">
+          <h4 id="camera_title" className="text-white text-3xl md:text-6xl font-bold opacity-0 mt-2 md:mb-10 mb-8">
             A camera that captures your wildest imagination.
           </h4>
-          <p id="camera_title" className='hiw-text opacity-0'>
+          <p id="camera_title" className='hiw-text md:text-2xl opacity-0'>
             From dramatic framing flexibility to next-generation portraits, see what you can do with our most powerful iPhone camera system.
           </p>
           <div className='w-full flex items-center flex-center'>
