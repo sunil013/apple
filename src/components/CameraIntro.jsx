@@ -41,7 +41,6 @@ const CameraIntro = () => {
               src={isMobile ? cameraSampleImages.small : isDesktop ? cameraSampleImages.large : cameraSampleImages.medium} 
               className='camera-intro-image w-full' 
               alt='camera_zoom' 
-              style={{transform: isDesktop ? "matrix(1.6, 0, 0, 1.6, 0, 200)":"matrix(1, 0, 0, 1, 0, 0)"}}
             />
             </div>
             <p className='text-gray text-xs md:text-sm'>A green iguana, captured by the 48MP Main camera</p>
